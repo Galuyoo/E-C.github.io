@@ -1,2 +1,3 @@
 # E-C.github.io
-this is just a test
+A little E-Commerce store.
+The goal is to get as much skills as possible.
