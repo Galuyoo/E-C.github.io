@@ -44,6 +44,54 @@ body {
 
 /* Header Start */
 
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #DFE4DD;
+    box-shadow: 0 5px 15px rbga(0, 0, 0, 0.06);
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#222;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:#465b52;
+    
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width:80%;
+    height: 2px;
+    background: #6f854d ;
+    position: absolute;
+    bottom:-4px;
+    left:20px;
+
+}
 
 /* Home Page */
 
