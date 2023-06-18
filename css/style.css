@@ -4,36 +4,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
-    }
+}
 
 h1 {
     font-size: 50px;
     line-height: 64px;
     color:#222; 
-    }
+}
 
 h2 {
     font-size: 46px;
     line-height: 54px;
     color:#222;
-    }
+}
 
 h4 {
     font-size: 20px; color:#222;
-    }
+}
+
 h6 {
     font-weight: 700; 
     font-size: 12px;
-    }
+}
     
 p {
     color:#465b52;
     font-size: 16px; 
     margin: 15px 0 20px 0;
-    }
+}
 .section-p1 {
     padding: 40px 80px;
-    }
+}
 
 .section-m1 {
     padding: 40px 0;
@@ -41,6 +42,27 @@ p {
 body {
     width: 100%;
     }
+
+
+.a{
+    text-decoration: none; 
+    color:#fff;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease; 
+    border-radius:100px; 
+    padding: 14px 50px;
+    letter-spacing:10px;
+    text-transform:uppercase;
+    background-color:#3F3F3F;
+    border-radius: 100px 100px;
+
+}
+
+
+.a:hover{
+    background-color: #6f854d;
+    border-radius: 0 100px;
+}
 
 /* Header Start */
 
@@ -132,22 +154,6 @@ body {
     color:antiquewhite;
 }
 
-#hero .a{
-    text-decoration: none; 
-    color:#fff;
-    transform: translate(-50%,-50%);
-    transition: all 0.5s ease; 
-    border-radius:100px; 
-    padding: 14px 50px;
-    letter-spacing:10px;
-    text-transform:uppercase;
-}
-
-
-#hero .a:hover{
-    background-color: #6f854d;
-    border-radius: 0 100px;
-}
 
 #feature{
     display: flex;
@@ -262,5 +268,71 @@ body {
     bottom: 20px;
     right: 15px; 
 }
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/banner/b1.jpg");
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color:aliceblue ;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #fff ;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner .a {
+    background-color: #465b52;
+}
+
+#banner .a:hover{
+    background-color: #6f854d;
+    border-radius: 0 100px;
+}
+
+#banner h2 span{
+    background-color: #CA4246;
+  
+    /* Create the gradient. */
+     background-image: linear-gradient(
+          45deg,
+          #ECC440 16.666%, 
+          #FFFA8A 16.666%, 
+          #DDAC17 33.333%, 
+          #FFFF95 33.333%, 
+          #ECC440 50%, 
+          #FFFA8A 50%, 
+          #DDAC17 66.666%, 
+          #FFFF95 66.666%, 
+          #ECC440 83.333%, 
+          #FFFA8A 83.333%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+
 
 /* Shop Page */
