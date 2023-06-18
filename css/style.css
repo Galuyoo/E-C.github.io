@@ -37,7 +37,7 @@ p {
 }
 
 .section-m1 {
-    padding: 40px 0;
+    margin: 40px 0;
     }
 body {
     width: 100%;
@@ -415,7 +415,7 @@ body {
 #sm-banner{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #sm-banner .banner-box {
@@ -424,15 +424,22 @@ body {
     justify-content: center;
     align-items: flex-start;
     background-image: url("../img/banner/b3.png");
-    min-width: 580px;
+    width: 580px; /* use width instead of min-width */
     height: 60vh;
     background-size: cover;
     background-position: center;
     padding: 30px;
+    margin: 0 10px; /* add some horizontal margin */
+    
 }
 
 #sm-banner .banner-box2 {
     background-image: url("../img/banner/b2.png");
+    
+}
+
+#sm-banner .banner-box2 .a-sm{
+    background-color: #465b52;
 }
 
 #sm-banner h4{
@@ -509,16 +516,138 @@ body {
     background-image: url("../img/banner/b5.avif");
 }
 
-#Oilfor{
+#News {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
-    background-image: url("../img/banner/7.png");
+    background-image: url("../img/banner/Argan-Banner.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
-    background-color: #ec544e;
+    background-color: #041e42;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    margin: 40px 0;
+    background-position: center;
 }
 
 
-/* Shop Page */
+#News h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+#News p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    
+}
+
+#News p span{
+    color: #ffbd27;
+}
+
+#News input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+    border: 1px solid;
+}
+
+#News button{
+    height: 7.9vh;
+    text-decoration: none; 
+    color:#fff;
+    transition: all 0.5s ease; 
+    letter-spacing:10px;
+    text-transform:uppercase;
+    background-color:#3F3F3F;
+    border-radius: 100px 100px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0 ;;
+}
+
+#News button:hover{
+    background-color: #6f854d;
+    border-radius: 0 100px;
+    cursor: pointer;
+}
+
+#News .form{
+    display: flex;
+    width: 40%;
+}
+
+footer{
+    background-color: #DFE4DD;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .col_pay img{
+    border: 1px solid #008178;
+    border-radius: 6px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #008178;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/* Start media Query */
+
+@media(max-width:799px){
+
+}
