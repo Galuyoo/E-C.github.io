@@ -134,6 +134,13 @@ body {
 
 }
 
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close {
+    display: none;
+}
 .logo {
     width: 170px;
     height: auto;
@@ -415,7 +422,6 @@ body {
 #sm-banner{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 #sm-banner .banner-box {
@@ -489,7 +495,6 @@ body {
 
 #banner3 h2{
     color: #ffffff;
-    font-weight: 900;
     font-size: 19px;
 }
 
@@ -564,7 +569,7 @@ body {
 }
 
 #News button{
-    height: 7.9vh;
+    height:3.125rem ;
     text-decoration: none; 
     color:#fff;
     transition: all 0.5s ease; 
@@ -649,5 +654,206 @@ footer .copyright{
 /* Start media Query */
 
 @media(max-width:799px){
+    .section-p1{
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        background-color: #DFE4DD;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: right 0.5s ease;
+    }
+    
+    #navbar.active {
+        right: 0;
+    }
+     
+    #navbar li{
+        margin-bottom: 25px;
+    }  
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+        
+    #navbar.close {
+        right: -300px;
+    }
+    
+    #nabvar .lg-bag{
+        display: none;
+    }
+
+    #hero {
+        height: 50vh;
+        padding: 0 80px;
+        background-position: top 30% right 120%;
+
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-con,
+    #product2 .pro-con{
+        justify-content: center;
+    }
+
+    #product1 .pro,
+    #product2 .pro{
+        margin: 15px;
+    }
+
+    #banner {
+        height: 30vh;
+    }
+    
+    #sm-banner .banner-box {
+        width: 100%;
+        height: 30vh;
+    }
+    
+    #sm-banner {
+        flex-wrap: wrap;
+    }
+
+    #banner3 {
+    padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+        width: 28%;
+        background-position: top 50% right 30%;
+    }
+
+    #News .form{
+        width: 70%;
+    }
+
+    #News p{
+        color: #3F3F3F;
+    }
+    #News p span{
+        color:#008178;
+    }
+
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    #header{
+        padding: 5px 30px;
+    }
+
+    #hero{
+        height: 50vh;
+        padding: 0 20px;
+        background-position: 20%;
+     }
+
+     h2 {
+        font-size: 27px;
+     }
+
+     h1{
+        font-size: 29px;
+     }
+     p{
+        font-size: 10px;
+     }
+     #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #feature {
+
+        justify-content: space-between;
+
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+    
+    #product2 .pro {
+        width: 100%;
+    }
+
+    #banner{
+        height:40vh;
+    }
+
+
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2{
+        margin-top: 20px;
+    }
+    #sm-banner .banner-box2 p {
+        word-wrap: break-word;
+    }
+    
+    .a{
+        padding: 10px 20px;
+        letter-spacing:4px;
+    }
+
+    .a-sm{
+        padding: 10px 20px;
+        letter-spacing:4px;
+    }
+
+
+    .a:hover{
+        background-color: #6f854d;
+        border-radius: 0 100px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+    }
+
+    #News{
+        padding: 40px 20px;
+    }
+
+    #News .form{
+        width: 100%;
+    }
 
 }
